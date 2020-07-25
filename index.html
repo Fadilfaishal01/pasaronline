@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pasar Online</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="btn-bars"> 
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <label class="logo">Pasar Online</label>
+                <ul>
+                    <li><a href="#Beranda">Beranda</a></li>
+                    <li><a href="#Produk">Produk</a></li>
+                    <li><a href="#Tentang">Tentang</a></li>
+                </ul>
+            </nav>
+        </header> 
+        
+        <div class="jumbotron" id="Beranda">
+            <h3>Selamat Datang di Pasar Online</h3>
+            <p>Ayoo pesan Belanjaan kamu sekarang juga.</p>
+        </div>
+        
+        <div class="content-1">
+            <aside class="aside-img">
+                <img src="./img/Jaket1.jpg" alt="Gambar Pasar Online">
+            </aside>
+            <aside class="aside-caption">
+                <h1 class="text-center">Pasar Online</h1>
+                <p class="text-center">Nobis quisquam dicta odit harum qui ipsum. Et quibusdam rerum a est vero. Sequi voluptas impedit natus enim. Veritatis rerum in totam. Qui minus enim non blanditiis animi ullam nisi perferendis.Hic cum recusandae. Sit ducimus totam iusto ducimus qui iure eligendi inventore similique. Ut eum consequatur aliquid. Quia soluta provident. Voluptatem nesciunt rerum a. Praesentium totam sint dolorum nihil reprehenderit enim.</p>
+            </aside>                    
+        </div>
+
+        <div class="space-1"></div>
+
+        <main id="Produk">
+            <h1 class="text-center">Produk</h1>
+            <div class="content">                
+                <div class="baris">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./img/peci.jpg" alt="Gambar Peci">
+                        </div>
+                        <div class="caption">
+                            <h3>Peci</h3>
+                            <div class="btn-total">
+                                <form id="FormPeci" name="FormPeci" onsubmit="return false">
+                                    <select name="select1" id="select1" onchange="HargaPeci()">
+                                        <option value="0">Pilih Satuan</option>
+                                        <option value="PCS">Pcs</option>
+                                        <option value="Lusin">Lusin</option>
+                                    </select>                                
+                                </form>
+                            </div>     
+                            <h4>Harga Rp. <span id="Peci">0</span></h4>                       
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./img/Jaket1.jpg" alt="Gambar Hoodie">
+                        </div>
+                        <div class="caption">
+                            <h3>Hoodie</h3>
+                            <div class="btn-total">
+                                <form id="FormHoodie" name="FormPeci" onsubmit="return false">
+                                    <select name="select1" id="select1" onchange="HargaHoodie()">
+                                        <option value="0">Pilih Satuan</option>
+                                        <option value="PCS">Pcs</option>
+                                        <option value="Lusin">Lusin</option>
+                                    </select>                                
+                                </form>
+                            </div>
+                            <h4>Harga Rp. <span id="Hoodie">0</span></h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./img/Jaket2.jpg" alt="Gambar Jaket">
+                        </div>
+                        <div class="caption">
+                            <h3>Jaket</h3>
+                            <div class="btn-total">
+                                <form id="FormJaket" name="FormPeci" onsubmit="return false">
+                                    <select name="select1" id="select1" onchange="HargaJaket()">
+                                        <option value="0">Pilih Satuan</option>
+                                        <option value="PCS">Pcs</option>
+                                        <option value="Lusin">Lusin</option>
+                                    </select>                                
+                                </form>
+                            </div>
+                            <h4>Harga Rp. <span id="Jaket">0</span></h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./img/Koko.jpg" alt="Gambar Baju Koko">
+                        </div>
+                        <div class="caption">
+                            <h3>Baju Koko</h3>
+                            <div class="btn-total">
+                                <form id="FormKoko" name="FormPeci" onsubmit="return false">
+                                    <select name="select1" id="select1" onchange="HargaKoko()">
+                                        <option value="0">Pilih Satuan</option>
+                                        <option value="PCS">Pcs</option>
+                                        <option value="Lusin">Lusin</option>
+                                    </select>                                
+                                </form>
+                            </div>
+                            <h4>Harga Rp. <span id="Koko">0</span></h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./img/Kemeja.png" alt="Gambar Kemeja">
+                        </div>
+                        <div class="caption">
+                            <h3>Kemeja</h3>
+                            <div class="btn-total">
+                                <form id="FormKemeja" name="FormPeci" onsubmit="return false">
+                                    <select name="select1" id="select1" onchange="HargaKemeja()">
+                                        <option value="0">Pilih Satuan</option>
+                                        <option value="PCS">Pcs</option>
+                                        <option value="Lusin">Lusin</option>
+                                    </select>                                
+                                </form>
+                            </div>
+                            <h4>Harga Rp. <span id="Kemeja">0</span></h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./img/Jeans.jpg" alt="Gambar Celana Jeans">
+                        </div>
+                        <div class="caption">
+                            <h3>Celana Jeans</h3>
+                            <div class="btn-total">
+                                <form id="FormJeans" name="FormPeci" onsubmit="return false">
+                                    <select name="select1" id="select1" onchange="HargaJeans()">
+                                        <option value="0">Pilih Satuan</option>
+                                        <option value="PCS">Pcs</option>
+                                        <option value="Lusin">Lusin</option>
+                                    </select>                                
+                                </form>
+                            </div>
+                            <h4>Harga Rp. <span id="Jeans">0</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <article class="card-aside">
+                    <h2 class="text-center">Keranjang Belanjaan</h2>
+                    <br>
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">No.</th>
+                                    <th class="text-left" colspan="2">List Barang</th>
+                                    <th class="text-right">Harga</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Peci</td>
+                                    <td>:</td>
+                                    <td class="text-right">Rp. <span id="Peci2">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Baju Koko</td>
+                                    <td>:</td>
+                                    <td class="text-right">Rp. <span id="Koko2">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Jaket</td>
+                                    <td>:</td>
+                                    <td class="text-right">Rp. <span id="Jaket2">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Hoodie</td>
+                                    <td>:</td>
+                                    <td class="text-right">Rp. <span id="Hoodie2">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>Kemeja</td>
+                                    <td>:</td>
+                                    <td class="text-right">Rp. <span id="Kemeja2">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>Jeans</td>
+                                    <td>:</td>
+                                    <td class="text-right">Rp. <span id="Jeans2">0</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn-bayar">
+                        <button>Bayar Sekarang</button>
+                    </div>
+                </article>
+            </aside>
+        </main>        
+        <div class="space-2"></div>
+
+        <div class="content-2" id="Tentang">
+            <h1 class="text-center">Tentang</h1>
+            <aside class="tentang-1">
+                <h3 class="text-center">Alamat</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae officia dolorem ratione inventore id libero, ut laudantium. Quod blanditiis rerum architecto id unde nobis eaque nostrum magnam minus. Quia, repudiandae?</p>
+            </aside>
+            <aside class="tentang-2">
+                <h3 class="text-center">Alamat</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae officia dolorem ratione inventore id libero, ut laudantium. Quod blanditiis rerum architecto id unde nobis eaque nostrum magnam minus. Quia, repudiandae?</p>
+            </aside>                    
+        </div>
+
+        <footer>
+            <p>@Copyright Fadil Faishal. All right 2020</p>
+        </footer>
+
+        <script src="./js/style.js"></script>
+    </body>
+</html>
